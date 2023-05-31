@@ -1,7 +1,7 @@
 name: "Try to Fetch"
 
 on:
-  pull_request:
+  push:
     branches:
       - "main"
 
