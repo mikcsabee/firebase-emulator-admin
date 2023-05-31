@@ -27,7 +27,7 @@ jobs:
       - name: Set environment
         run: |
           export FIREBASE_DATABASE_EMULATOR_HOST="localhost:9000"
-          expopt FIRESTORE_EMULATOR_HOST="localhost:8080"
+          export FIRESTORE_EMULATOR_HOST="localhost:8080"
           export GCLOUD_PROJECT="test"
       - name: Run
         run: node index.js
