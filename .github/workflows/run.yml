@@ -24,6 +24,8 @@ jobs:
         run: |
           chmod +x wait.sh
           ./wait.sh
+      - name: curl config
+        run: http://localhost:9000/config.json?ns=test
       - name: Run
         run: |
           export FIREBASE_DATABASE_EMULATOR_HOST="localhost:9000"
