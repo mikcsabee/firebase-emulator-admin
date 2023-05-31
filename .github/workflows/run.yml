@@ -24,10 +24,9 @@ jobs:
         run: |
           chmod +x wait.sh
           ./wait.sh
-      - name: Set environment
+      - name: Run
         run: |
           export FIREBASE_DATABASE_EMULATOR_HOST="localhost:9000"
           export FIRESTORE_EMULATOR_HOST="localhost:8080"
           export GCLOUD_PROJECT="test"
-      - name: Run
-        run: node index.js
+          node index.js
