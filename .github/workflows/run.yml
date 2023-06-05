@@ -28,7 +28,7 @@ jobs:
         run: curl http://localhost:9000/config.json?ns=test
       - name: Run
         run: |
-          export FIREBASE_DATABASE_EMULATOR_HOST="localhost:9000"
-          export FIRESTORE_EMULATOR_HOST="localhost:8080"
+          export FIREBASE_DATABASE_EMULATOR_HOST="127.0.0.1:9000"
+          export FIRESTORE_EMULATOR_HOST="127.0.0.1:8080"
           export GCLOUD_PROJECT="test"
           node index.js
